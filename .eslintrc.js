@@ -1,0 +1,50 @@
+module.exports = {
+  root: true,
+  extends: [
+    'plugin:react-hooks/recommended',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    '@react-native-community',
+    'prettier',
+  ],
+  plugins: ['react'],
+  rules: {
+    // 'max-lines': ['error', 333],
+    'no-inline-styles': 0,
+    'prettier/prettier': 0,
+    'comma-dangle': 0,
+    semi: 0,
+    'eol-last': 0,
+    'object-curly-spacing': ['error', 'always'],
+    'array-bracket-spacing': ['error', 'never'],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 0,
+
+    'react-native/no-inline-styles': 0,
+    'react-native/no-color-literals': 2,
+
+    radix: 0,
+    eqeqeq: 0,
+    'no-async-promise-executor': 0,
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        ignoredNodes: ['ConditionalExpression'],
+      },
+    ],
+    'no-extra-boolean-cast': 0,
+    'no-alert': 0,
+    'no-lone-blocks': 0,
+    'no-useless-escape': 0,
+    'react/prop-types': 0,
+    // "no-console": ["error"],
+  },
+  globals: {
+    _: true,
+    api: true,
+    // SCREEN: true,
+    // SCREEN_DATA: true,
+  },
+};

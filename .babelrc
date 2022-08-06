@@ -1,0 +1,29 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "env": {},
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "~": "./src",
+          "~s": "./src/Containers",
+          "~c": "./src/Components"
+        },
+        "extensions": [
+          ".ios.js",
+          ".android.js",
+          ".js",
+          ".jsx",
+          ".json",
+          ".tsx",
+          ".ts",
+          ".native.js"
+        ]
+      }
+    ]
+    // "react-native-reanimated/plugin",
+    // "transform-remove-console",
+  ]
+}
