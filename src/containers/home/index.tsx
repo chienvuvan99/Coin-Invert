@@ -28,7 +28,7 @@ export default () => {
   const [refreshing, setRefreshing] = useState(false);
 
   const renderItem = useCallback(
-    ({item, index}: ItemsProps) =>
+    ({item, index}: ItemsProps) => {
       return <Items item={item} index={index} />;
     },
     [data],
