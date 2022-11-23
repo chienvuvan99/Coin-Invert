@@ -10,13 +10,14 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from '~/containers/home';
 import Detail from '~/containers/detail';
 import Login from './login';
+import TestUi from './test/TestUi';
 
 const Stack = createNativeStackNavigator();
 export default () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Login" component={TestUi} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Detail" component={Detail} />
       </Stack.Navigator>
